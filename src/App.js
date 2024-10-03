@@ -16,8 +16,10 @@ import {
 } from "react-router-dom";
 import { useState } from "react";
 import { productsList } from "./Data/productList";
+
 function App() {
     let [products, setProducts] = useState(productsList);
+
     const router = createBrowserRouter(
         createRoutesFromElements(
             <>
@@ -27,7 +29,7 @@ function App() {
                         path='home'
                         element={
                             <PrivateRoute>
-                                <Home  />
+                                <Home />
                             </PrivateRoute>
                         }
                     />
@@ -57,12 +59,17 @@ function App() {
                     />
                 </Route>
             </>
-        )
+        ),
+        {
+            basename: "/project_iti"  // Add basename here
+        }
     );
+
     return (
         <>
             <RouterProvider router={router}></RouterProvider>
         </>
     );
 }
+
 export default App;
