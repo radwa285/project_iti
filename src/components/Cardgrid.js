@@ -44,7 +44,7 @@ function ContainerExample() {
     <Container>
       <Row>
         {productData.map((product, index) => (
-          <Col key={index} xs={12} sm={6} md={4} lg={3} className="mb-4">
+          <Col key={index} xs={12} sm={6} md={4} lg={4} className="mb-4">
             <ProductCard 
               title={product.title} 
               text={product.text} 
@@ -55,7 +55,7 @@ function ContainerExample() {
       </Row>
       <Row style={{ marginTop: "20px" }}>
         {productsData.map((product, index) => (
-          <Col key={index} xs={12} sm={6} md={4} lg={3} className="mb-4">
+          <Col key={index} xs={12} sm={6} md={4} lg={4} className="mb-4">
             <ProductCard 
               title={product.title} 
               text={product.text} 
