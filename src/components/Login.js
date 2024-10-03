@@ -7,7 +7,7 @@ export default function Login() {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const navigate = useNavigate();
-
+    localStorage.setItem('Username', username);
     const handleSubmit = (e) => {
         e.preventDefault();
         setError('');
