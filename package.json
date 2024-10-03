@@ -2,7 +2,9 @@
   "name": "final",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://radwa285.github.io/project_iti",  
+  "homepage": "https://radwa285.github.io/project_iti/",
+
+
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
